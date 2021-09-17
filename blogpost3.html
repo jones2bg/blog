@@ -1,4 +1,55 @@
 <html>
     <a href="index.html">Blog Home Page</a>
     <h2>Blog Post 3 - 9/16/21</h2>
+    <p>
+        This week I decided to explore different CSS layouts.<br>
+        I used this website <a href="https://csslayout.io/">CSS Layout</a> to look at different CSS layouts to research. <br>
+        One in particular <code>teardrop</code> is super cool, and I copied the code into the style to try it out.
+        Here it goes!
+        <div class="container">
+            <div class="container__content">
+                TEST
+            </div>
+        </div>
+        
+        <code class="code">
+            TEST
+            TEST
+            TEST
+        </code>
+    </p>
+
+    <style>
+
+        .code {
+            background-color: #272822;
+            color: #f8f8f2;
+            border-radius: 0.3em;
+            padding: 4px 5px 6px;
+            white-space: nowrap;
+        }
+
+        .container {
+            /* Center the content */
+            align-items: center;
+            display: flex;
+            justify-content: center;
+
+            /* Border */
+            border: 2px solid rgba(0, 0, 0, 0.3);
+            border-radius: 0px 50% 50% 50%;
+
+            /* Angle at the top */
+            transform: rotate(45deg);
+
+            /* Size */
+            height: 64px;
+            width: 64px;
+        }
+
+        .container__content {
+            transform: rotate(-45deg);
+        }
+
+    </style>
 </html>
